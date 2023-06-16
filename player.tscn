@@ -1,10 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://g7uwqq38w8bk"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_yidpa"]
-[ext_resource type="Texture2D" uid="uid://cj8hrygmf15ga" path="res://New Piskel.png" id="2_dsrtn"]
+[ext_resource type="Texture2D" uid="uid://bryko1uc0oc53" path="res://player walking right animation.png" id="2_63oql"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_yidpa")
 
-[node name="PlayerSprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_dsrtn")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("2_63oql")
+hframes = 3
+vframes = 2
